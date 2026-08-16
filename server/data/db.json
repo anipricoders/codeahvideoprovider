@@ -1,0 +1,71 @@
+{
+  "courses": [
+    {
+      "id": "course-react",
+      "title": "React JS Foundations",
+      "description": "Learn the absolute basics of React, including components, props, state, and standard custom video controls."
+    },
+    {
+      "id": "course-ts",
+      "title": "TypeScript Advanced Guide",
+      "description": "Deep dive into TypeScript types, interfaces, generics, and compiler options for solid web apps."
+    }
+  ],
+  "videos": [
+    {
+      "id": "react-v1",
+      "courseId": "course-react",
+      "topicName": "Introduction to React",
+      "title": "Welcome to React & Project Setup",
+      "url": "https://www.w3schools.com/html/movie.webm",
+      "order": 1
+    },
+    {
+      "id": "react-v2",
+      "courseId": "course-react",
+      "topicName": "Understanding Components",
+      "title": "Functional Components and JSX",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "order": 2
+    },
+    {
+      "id": "react-v3",
+      "courseId": "course-react",
+      "topicName": "State and Hooks",
+      "title": "Managing State with useState Hook",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+      "order": 3
+    },
+    {
+      "id": "ts-v1",
+      "courseId": "course-ts",
+      "topicName": "TypeScript Setup",
+      "title": "Installing TypeScript and configuring tsconfig",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+      "order": 1
+    },
+    {
+      "id": "ts-v2",
+      "courseId": "course-ts",
+      "topicName": "Advanced Typing",
+      "title": "Generics, Union Types and Utility Types",
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+      "order": 2
+    }
+  ],
+  "codes": [
+    {
+      "code": "CODE-REACT",
+      "studentName": "Demo Student React",
+      "courseId": "course-react",
+      "createdAt": "2026-07-06T18:34:52.000Z"
+    },
+    {
+      "code": "CODE-TS",
+      "studentName": "Demo Student TS",
+      "courseId": "course-ts",
+      "createdAt": "2026-07-06T18:34:52.000Z"
+    }
+  ],
+  "progress": []
+}
