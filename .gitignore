@@ -41,3 +41,6 @@ pnpm-debug.log*
 .env
 .env.local
 .env.*.local
+
+# Uploads
+/src/main/resources/static/uploads/

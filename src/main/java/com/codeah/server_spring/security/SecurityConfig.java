@@ -33,6 +33,7 @@ public class SecurityConfig {
                 .requestMatchers("/h2-console/**").permitAll()
                 .requestMatchers("/uploads/**").permitAll()
                 .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                .requestMatchers("/", "/index.html", "/assets/**", "/favicon.svg", "/icons.svg", "/admin", "/student").permitAll()
                 .anyRequest().authenticated()
             );
 

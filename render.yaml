@@ -1,31 +1,14 @@
 services:
-  # 1. Spring Boot Backend Web Service
   - type: web
-    name: codeah-backend
-    env: java
-    buildCommand: chmod +x mvnw && ./mvnw clean package -DskipTests
-    startCommand: java -jar target/server-spring-0.0.1-SNAPSHOT.jar
+    name: codeah-video-previewer
+    env: docker
     plan: free
     envVars:
-      - key: PORT
-        value: 10000
       - key: SPRING_DATASOURCE_URL
-        sync: false # User will paste their Neon DB connection URL in Render Dashboard
+        sync: false # Paste Neon Connection JDBC URL in Render UI
       - key: SPRING_DATASOURCE_USERNAME
-        sync: false
+        sync: false # Paste Neon Database Username in Render UI
       - key: SPRING_DATASOURCE_PASSWORD
-        sync: false
+        sync: false # Paste Neon Database Password in Render UI
       - key: SPRING_JPA_HIBERNATE_DDL_AUTO
         value: update
-
-  # 2. Vite + React Frontend Static Site
-  - type: static
-    name: codeah-frontend
-    env: static
-    rootDir: client
-    buildCommand: npm install && npm run build
-    publishDir: dist
-    plan: free
-    envVars:
-      - key: VITE_API_URL
-        sync: false # User will set this to https://<your-backend-url>.onrender.com/api in Render Dashboard

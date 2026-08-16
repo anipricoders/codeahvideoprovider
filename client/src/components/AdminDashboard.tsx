@@ -76,7 +76,7 @@ export const AdminDashboard: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [message, setMessage] = useState<string | null>(null);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_API_URL || '/api';
 
   const getHeaders = () => {
     const token = localStorage.getItem('codeah_admin_token');

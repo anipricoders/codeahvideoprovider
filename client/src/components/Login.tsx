@@ -16,7 +16,7 @@ export const Login: React.FC<LoginProps> = ({ onStudentLogin, onAdminLogin }) =>
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const API_URL = import.meta.env.VITE_API_URL || '/api';
 
   const handleStudentSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
